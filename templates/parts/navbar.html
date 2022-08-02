@@ -1,0 +1,66 @@
+<style>
+  #navbar{
+    margin: 0 ;
+    padding: 0 ;
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    background: rgb(25, 23, 23);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  li{
+    display: inline-flex;
+    left: 10%;
+  }
+  #navbar a{
+    position: relative;
+    bottom:-1em;
+  }
+  #navbar a:hover{
+    color: rgb(255, 0, 191);
+    text-decoration: none;
+    transition: 0.3s;        
+  }
+  .dropdown-menu{
+    background: fixed, rgba(0, 0, 0, 0.789);
+    height: 19em;
+    padding: 5px;
+  }
+  .dropdown-menu a{
+    font-size: large;
+    font-style: italic  ;
+  }
+</style>
+<div id="navbar" class="container-fluid">
+<li>
+  <ul><h1 class="display-6"><span>Co2</span></h1></ul>
+  <ul><h4><a href="{%url 'welcome'%}">home</a></h4></ul>
+            </li>
+            <h4><li><a style="left: 1em;"class=dropdown" href="#" data-toggle="dropdown">ZodiacSign</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a href="{%url 'capri'%}">capricorn</a><br>
+                  <a href="{%url 'aqua'%}">aquarius</a>
+<br>                     <a href="{%url 'pisces'%}">pisces</a>
+<br>                     <a href="{%url 'aries'%}">aries</a>
+<br>                   <a href="{%url 'taurus'%}">taurus</a>
+<br>                     <a href="{%url 'virgo'%}">virgo</a>
+<br>                   <a href="{%url 'leo'%}">leo</a>
+   <br>               <a href="{%url 'gemini'%}">gemini</a>
+<br>                     <a href="{%url 'cancer'%}">cancer</a>
+<br>                     <a href="{%url 'libra'%}">libra</a>
+<br>                   <a href="{%url 'scorpio'%}">scorpio</a><br>
+                  <a href="{%url 'sag'%}">sagittarius</a><br>
+              </li></h4>
+            <li>
+              <h4><a style="left: 2em;" href="{%url 'co2'%}">About Me</a></h4>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</li>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
